@@ -12,7 +12,7 @@ import picocli.CommandLine.Parameters;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-@Command(name = "nba-scrape", mixinStandardHelpOptions = true)
+@Command(name = "nba-scrape", mixinStandardHelpOptions = true, version = "1.0.0")
 public class NBA implements Callable<Integer> {
 
   WebDriver driver;
