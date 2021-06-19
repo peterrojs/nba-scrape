@@ -14,4 +14,4 @@ $ nba-scrape Luka Doncic
 ```
 
 ## Notes
-* The CLI uses Selenium and a chromedriver for Chrome 91, so Chrome 91 needs to be installed for the CLI to work
+* The CLI uses Selenium and a chromedriver to work. It automatically downloads the appropriate driver to work with Chrome.
