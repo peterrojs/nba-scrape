@@ -27,7 +27,7 @@ public class NBA implements Callable<Integer> {
   @Override
   public Integer call() throws InterruptedException {
 
-    System.setProperty("webdriver.chrome.driver", "chromedriver");
+    System.setProperty("webdriver.chrome.driver", "bin/chromedriver");
 
     // Instantiate a ChromeDriver class.
     driver = new ChromeDriver();
