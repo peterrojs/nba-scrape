@@ -3,6 +3,7 @@ package me.peterrojs;
 import java.util.List;
 import java.util.concurrent.Callable;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import picocli.CommandLine;
@@ -27,7 +28,7 @@ public class NBA implements Callable<Integer> {
   @Override
   public Integer call() throws InterruptedException {
 
-    System.setProperty("webdriver.chrome.driver", "bin/chromedriver");
+    WebDriverManager.chromedriver().setup();
 
     // Instantiate a ChromeDriver class.
     driver = new ChromeDriver();
